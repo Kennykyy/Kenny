@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .details {
+            margin-top: 2em;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 2em;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+        #confirmation {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+        .confirmation-message {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .button {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .button {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alexander & Paola</h1>
+        <h2>Te invitamos a nuestra boda</h2>
+        <p>Nos complace invitarte a la celebración de nuestra boda que tendrá lugar en:</p>
+        <p><strong>Fecha:</strong> 15 de Junio de 2024</p>
+        <p><strong>Hora:</strong> 3:00 PM</p>
+        <p><strong>Lugar:</strong> Salón de Eventos Roblox XD</p>
+        
+        <div class="details">
+            <h2>Detalles del Evento</h2>
+            <p>Será un día lleno de amor, alegría y diversión. No olvides traer tu mejor atuendo para celebrar este día tan especial con nosotros.</p>
+            <p>Después de la ceremonia, habrá comidita y bailongo, claro q si.</p>
+        </div>
+
+        <a href="#" class="button" onclick="confirmAttendance()">Confirmar Asistencia</a>
+
+        <div id="confirmation">
+            <div class="confirmation-message">¡CONFIRMÉ ASISTENCIA!</div>
+            <img src="C:\Users\emanu\Documents\KENNY\Boda.gif" alt="Imagen de confirmación" />
+        </div>
+    </div>
+
+    <script>
+        function confirmAttendance() {
+            document.getElementById('confirmation').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
